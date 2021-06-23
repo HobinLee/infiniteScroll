@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+  background-color: #eee;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.News-doubleQuotes {
+  width: 20px;
+  height: 20px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.News-scroll {
+  padding: 30px;
+  background-color: white;
+  list-style: none;
+  overflow-y: auto;
+  width: 90%;
+  min-width: 400px;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.News-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  box-shadow: #ddd 1px 1px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.News-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.2em;
+  height: 2.4em;
+}
+
+.News-date {
+  position: absolute;
+  font-size: 10px;
+  color: #888;
+  right: 10px;
+  bottom: 10px;
+}
+
+.indicator {
+  font-size: 30px;
+  font-weight: lighter;
+  color: #888;
+}
